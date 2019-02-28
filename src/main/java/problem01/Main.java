@@ -39,6 +39,19 @@ public class Main {
 	}
 	
 	public static boolean checkAnswer(int answer) {
+		if (answer != randomNumber) {
+			
+			if (answer <= randomNumber) {
+				//System.out.println("min answer:" +answer);
+				min = answer;
+			} 
+			else if (answer >= randomNumber){
+				//System.out.println("max answer:" +answer);
+				max = answer;
+			}
+			//count = answ;
+			return false;
+		}
 		return true;
 	}
 }
